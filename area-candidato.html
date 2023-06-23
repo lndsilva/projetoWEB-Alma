@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do candidato</title>
+    <style>
+        body{
+            background-color: aqua;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="logo">
+        <figure>
+            <a href="index.html">
+                <img src="imagens/logo.png" alt="logo">
+            </a>
+            <figcaption>Alma Associados</figcaption>
+        </figure>
+    </div>
+    <div id="menu-principal">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quem-somos.html">Quem somos</a></li>
+            <li><a href="vagas.html">Vagas</a></li>
+            <li><a href="parcerias.html">Parcerias</a></li>
+            <li><a href="area-candidato.html">Área do Candidato</a></li>
+        </ul>
+    </div>
+    <div class="conteudo">
+        <h1>Área do candidato</h1>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Informações de contato:</legend>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome"
+                    placeholder="Insira seu nome" 
+                    size="50" maxlength="100"
+                    autofocus autocomplete="off" >
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email"
+                    placeholder="Insira seu e-mail" 
+                    size="50" maxlength="100" autocomplete="off" >
+                    <label for="tel">Telefone:</label>
+                    <input type="tel" id="tel" name="tel"
+                    placeholder="(99) 99999-9999" 
+                    size="10" maxlength="14" autocomplete="off" >
+            </fieldset>
+            <fieldset>
+                <legend>Informações do candidato</legend>
+                <label for="pretSalarial">Pretensão salarial</label>
+                <input type="text" id="pretSalarial" name="pretSalarial"
+                placeholder="R$ 0000,00" size="10" maxlength="10"
+                autocomplete="off">
+                <label for="dataNasc">Data nascimento</label>
+                <input type="date" id="dataNasc" name="dataNasc">
+                <label for="escolaridade">Escolaridade</label>
+                <select name="escolaridade" id="escolaridade">
+                    <option value="#">--</option>
+                    <option value="fundamental">Fundamental</option>
+                    <option value="medio">Médio</option>
+                    <option value="tecnico">Técnico</option>
+                    <option value="tecnologo">Tecnologo</option>
+                    <option value="bacharel">Bacharel</option>
+                    <option value="posGraduacao">Pós-Graduação</option>
+                    <option value="mestrado">Mestrado</option>
+                    <option value="doutorado">Doutorado</option>
+                </select>
+                
+                <input type="radio" name="sexo" id="fem" value="fem">
+                <label for="fem">Feminino</label>
+                <input type="radio" name="sexo" id="masc" value="masc">
+                <label for="masc">Masculino</label>
+                <label for="fale">Fale sobre você</label>
+                <textarea name="fale" id="fale" 
+                cols="30" rows="10" style="resize: none;"></textarea>
+                
+            </fieldset>
+
+
+        
+        </form>
+    </div>
+    
+</body>
+</html>
